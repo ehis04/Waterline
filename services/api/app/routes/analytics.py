@@ -3,7 +3,7 @@
 from decimal import Decimal, ROUND_HALF_UP
 import uuid
 import numpy as np
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, Depends, HTTPException
 
 from app.contracts import (
     BreakingPointRequest,
@@ -21,6 +21,7 @@ from app.portfolio_data import (
     holdings_market_value,
     resolve_portfolio_key,
 )
+from app.security import get_tenant_id, verify_portfolio_tenant_access
 from risk_core.breaking_point import solve_breaking_point
 from risk_core.metrics import calculate_historical_var_es, calculate_mdd
 from risk_core.scenarios import apply_hypothetical_shocks
@@ -33,9 +34,10 @@ def _round_money(val: float | Decimal) -> Decimal:
 
 
 @router.post("/risk", response_model=RiskRunResponse)
-def run_risk(req: RiskRunRequest) -> RiskRunResponse:
+def run_risk(req: RiskRunRequest, tenant_id: str = Depends(get_tenant_id)) -> RiskRunResponse:
     """Compute historical VaR, Expected Shortfall, and Maximum Drawdown on daily portfolio P&L."""
     key = resolve_portfolio_key(req.portfolio_id)
+    verify_portfolio_tenant_access(key, tenant_id)
     snapshot, _ = build_portfolio_snapshot(key)
     price_series = get_synthetic_close_prices()
 
@@ -93,9 +95,10 @@ def run_risk(req: RiskRunRequest) -> RiskRunResponse:
 
 
 @router.post("/scenario", response_model=ScenarioRunResponse)
-def run_scenario(req: ScenarioRunRequest) -> ScenarioRunResponse:
+def run_scenario(req: ScenarioRunRequest, tenant_id: str = Depends(get_tenant_id)) -> ScenarioRunResponse:
     """Apply hypothetical asset return overrides and compute position-level and total P&L impact."""
     key = resolve_portfolio_key(req.portfolio_id)
+    verify_portfolio_tenant_access(key, tenant_id)
     snapshot, _ = build_portfolio_snapshot(key)
 
     overrides = {s.isin: s.override_return for s in req.shocks}
@@ -141,9 +144,13 @@ def run_scenario(req: ScenarioRunRequest) -> ScenarioRunResponse:
 
 
 @router.post("/breaking-point", response_model=BreakingPointResponse)
-def run_breaking_point(req: BreakingPointRequest) -> BreakingPointResponse:
+def run_breaking_point(
+    req: BreakingPointRequest,
+    tenant_id: str = Depends(get_tenant_id),
+) -> BreakingPointResponse:
     """Solve reverse stress-testing breaking point for a given loss threshold and narrative."""
     key = resolve_portfolio_key(req.portfolio_id)
+    verify_portfolio_tenant_access(key, tenant_id)
     snapshot, _ = build_portfolio_snapshot(key)
     total_val = holdings_market_value(snapshot)
     catalog = get_funds_catalog()
