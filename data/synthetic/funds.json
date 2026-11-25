@@ -1,0 +1,682 @@
+[
+  {
+    "isin": "ZZET00000017",
+    "name": "Plumbline Global Developed Core UCITS ETF (Acc)",
+    "category": "Global Equity",
+    "domicile": "IE",
+    "base_currency": "USD",
+    "distribution_policy": "ACCUMULATING",
+    "is_currency_hedged": false,
+    "hedge_currency": null,
+    "ter_bps": 12,
+    "listings": [
+      {
+        "isin": "ZZET00000017",
+        "mic": "XETR",
+        "ticker": "PDEV",
+        "currency": "EUR"
+      },
+      {
+        "isin": "ZZET00000017",
+        "mic": "XLON",
+        "ticker": "PDEV",
+        "currency": "GBP"
+      },
+      {
+        "isin": "ZZET00000017",
+        "mic": "XAMS",
+        "ticker": "PDEV",
+        "currency": "EUR"
+      }
+    ],
+    "constituents": [
+      {
+        "constituent_isin": "ZZEQ01010018",
+        "name": "Aether Technologies",
+        "weight": "0.150000",
+        "asset_type": "EQUITY",
+        "sector": "Technology",
+        "country": "US"
+      },
+      {
+        "constituent_isin": "ZZEQ01020017",
+        "name": "Boreas Systems",
+        "weight": "0.140000",
+        "asset_type": "EQUITY",
+        "sector": "Technology",
+        "country": "US"
+      },
+      {
+        "constituent_isin": "ZZEQ01030016",
+        "name": "Cipher Cloud Dynamics",
+        "weight": "0.120000",
+        "asset_type": "EQUITY",
+        "sector": "Technology",
+        "country": "US"
+      },
+      {
+        "constituent_isin": "ZZEQ01040015",
+        "name": "Delta Semiconductor",
+        "weight": "0.100000",
+        "asset_type": "EQUITY",
+        "sector": "Technology",
+        "country": "US"
+      },
+      {
+        "constituent_isin": "ZZEQ01050014",
+        "name": "Epsilon Software AG",
+        "weight": "0.090000",
+        "asset_type": "EQUITY",
+        "sector": "Technology",
+        "country": "DE"
+      },
+      {
+        "constituent_isin": "ZZEQ01060013",
+        "name": "Fuji Robotics KK",
+        "weight": "0.080000",
+        "asset_type": "EQUITY",
+        "sector": "Technology",
+        "country": "JP"
+      },
+      {
+        "constituent_isin": "ZZEQ01070012",
+        "name": "Galileo AI Labs",
+        "weight": "0.080000",
+        "asset_type": "EQUITY",
+        "sector": "Technology",
+        "country": "UK"
+      },
+      {
+        "constituent_isin": "ZZEQ01080011",
+        "name": "Helios Microdevices",
+        "weight": "0.080000",
+        "asset_type": "EQUITY",
+        "sector": "Technology",
+        "country": "US"
+      },
+      {
+        "constituent_isin": "ZZEQ01090010",
+        "name": "Imperial Midland Bank",
+        "weight": "0.080000",
+        "asset_type": "EQUITY",
+        "sector": "Financials",
+        "country": "UK"
+      },
+      {
+        "constituent_isin": "ZZEQ01100017",
+        "name": "Nordic Rhine Capital",
+        "weight": "0.080000",
+        "asset_type": "EQUITY",
+        "sector": "Financials",
+        "country": "DE"
+      }
+    ]
+  },
+  {
+    "isin": "ZZET00000025",
+    "name": "Plumbline Global Developed Income UCITS ETF (Dist)",
+    "category": "Global Equity",
+    "domicile": "IE",
+    "base_currency": "USD",
+    "distribution_policy": "DISTRIBUTING",
+    "is_currency_hedged": false,
+    "hedge_currency": null,
+    "ter_bps": 12,
+    "listings": [
+      {
+        "isin": "ZZET00000025",
+        "mic": "XLON",
+        "ticker": "PDVD",
+        "currency": "GBP"
+      },
+      {
+        "isin": "ZZET00000025",
+        "mic": "XETR",
+        "ticker": "PDVD",
+        "currency": "EUR"
+      }
+    ],
+    "constituents": [
+      {
+        "constituent_isin": "ZZEQ01010018",
+        "name": "Aether Technologies",
+        "weight": "0.150000",
+        "asset_type": "EQUITY",
+        "sector": "Technology",
+        "country": "US"
+      },
+      {
+        "constituent_isin": "ZZEQ01020017",
+        "name": "Boreas Systems",
+        "weight": "0.140000",
+        "asset_type": "EQUITY",
+        "sector": "Technology",
+        "country": "US"
+      },
+      {
+        "constituent_isin": "ZZEQ01030016",
+        "name": "Cipher Cloud Dynamics",
+        "weight": "0.120000",
+        "asset_type": "EQUITY",
+        "sector": "Technology",
+        "country": "US"
+      },
+      {
+        "constituent_isin": "ZZEQ01040015",
+        "name": "Delta Semiconductor",
+        "weight": "0.100000",
+        "asset_type": "EQUITY",
+        "sector": "Technology",
+        "country": "US"
+      },
+      {
+        "constituent_isin": "ZZEQ01050014",
+        "name": "Epsilon Software AG",
+        "weight": "0.090000",
+        "asset_type": "EQUITY",
+        "sector": "Technology",
+        "country": "DE"
+      },
+      {
+        "constituent_isin": "ZZEQ01060013",
+        "name": "Fuji Robotics KK",
+        "weight": "0.080000",
+        "asset_type": "EQUITY",
+        "sector": "Technology",
+        "country": "JP"
+      },
+      {
+        "constituent_isin": "ZZEQ01070012",
+        "name": "Galileo AI Labs",
+        "weight": "0.080000",
+        "asset_type": "EQUITY",
+        "sector": "Technology",
+        "country": "UK"
+      },
+      {
+        "constituent_isin": "ZZEQ01080011",
+        "name": "Helios Microdevices",
+        "weight": "0.080000",
+        "asset_type": "EQUITY",
+        "sector": "Technology",
+        "country": "US"
+      },
+      {
+        "constituent_isin": "ZZEQ01090010",
+        "name": "Imperial Midland Bank",
+        "weight": "0.080000",
+        "asset_type": "EQUITY",
+        "sector": "Financials",
+        "country": "UK"
+      },
+      {
+        "constituent_isin": "ZZEQ01100017",
+        "name": "Nordic Rhine Capital",
+        "weight": "0.080000",
+        "asset_type": "EQUITY",
+        "sector": "Financials",
+        "country": "DE"
+      }
+    ]
+  },
+  {
+    "isin": "ZZET00000033",
+    "name": "Plumbline US Large Cap 100 EUR-Hedged UCITS ETF (Acc)",
+    "category": "US Equity",
+    "domicile": "IE",
+    "base_currency": "EUR",
+    "distribution_policy": "ACCUMULATING",
+    "is_currency_hedged": true,
+    "hedge_currency": "EUR",
+    "ter_bps": 15,
+    "listings": [
+      {
+        "isin": "ZZET00000033",
+        "mic": "XETR",
+        "ticker": "PUS5",
+        "currency": "EUR"
+      },
+      {
+        "isin": "ZZET00000033",
+        "mic": "XAMS",
+        "ticker": "PUS5",
+        "currency": "EUR"
+      }
+    ],
+    "constituents": [
+      {
+        "constituent_isin": "ZZEQ01010018",
+        "name": "Aether Technologies",
+        "weight": "0.220000",
+        "asset_type": "EQUITY",
+        "sector": "Technology",
+        "country": "US"
+      },
+      {
+        "constituent_isin": "ZZEQ01020017",
+        "name": "Boreas Systems",
+        "weight": "0.200000",
+        "asset_type": "EQUITY",
+        "sector": "Technology",
+        "country": "US"
+      },
+      {
+        "constituent_isin": "ZZEQ01030016",
+        "name": "Cipher Cloud Dynamics",
+        "weight": "0.160000",
+        "asset_type": "EQUITY",
+        "sector": "Technology",
+        "country": "US"
+      },
+      {
+        "constituent_isin": "ZZEQ01040015",
+        "name": "Delta Semiconductor",
+        "weight": "0.140000",
+        "asset_type": "EQUITY",
+        "sector": "Technology",
+        "country": "US"
+      },
+      {
+        "constituent_isin": "ZZEQ01080011",
+        "name": "Helios Microdevices",
+        "weight": "0.110000",
+        "asset_type": "EQUITY",
+        "sector": "Technology",
+        "country": "US"
+      },
+      {
+        "constituent_isin": "ZZEQ01140013",
+        "name": "Apex Global Bancorp",
+        "weight": "0.090000",
+        "asset_type": "EQUITY",
+        "sector": "Financials",
+        "country": "US"
+      },
+      {
+        "constituent_isin": "ZZEQ01150012",
+        "name": "Vanguard BioTherapeutics",
+        "weight": "0.080000",
+        "asset_type": "EQUITY",
+        "sector": "Healthcare",
+        "country": "US"
+      }
+    ]
+  },
+  {
+    "isin": "ZZET00000041",
+    "name": "Plumbline Global Technology Titans UCITS ETF (Acc)",
+    "category": "Sector Technology",
+    "domicile": "IE",
+    "base_currency": "USD",
+    "distribution_policy": "ACCUMULATING",
+    "is_currency_hedged": false,
+    "hedge_currency": null,
+    "ter_bps": 30,
+    "listings": [
+      {
+        "isin": "ZZET00000041",
+        "mic": "XETR",
+        "ticker": "PTCH",
+        "currency": "EUR"
+      },
+      {
+        "isin": "ZZET00000041",
+        "mic": "XLON",
+        "ticker": "PTCH",
+        "currency": "GBP"
+      }
+    ],
+    "constituents": [
+      {
+        "constituent_isin": "ZZEQ01010018",
+        "name": "Aether Technologies",
+        "weight": "0.180000",
+        "asset_type": "EQUITY",
+        "sector": "Technology",
+        "country": "US"
+      },
+      {
+        "constituent_isin": "ZZEQ01020017",
+        "name": "Boreas Systems",
+        "weight": "0.160000",
+        "asset_type": "EQUITY",
+        "sector": "Technology",
+        "country": "US"
+      },
+      {
+        "constituent_isin": "ZZEQ01030016",
+        "name": "Cipher Cloud Dynamics",
+        "weight": "0.150000",
+        "asset_type": "EQUITY",
+        "sector": "Technology",
+        "country": "US"
+      },
+      {
+        "constituent_isin": "ZZEQ01040015",
+        "name": "Delta Semiconductor",
+        "weight": "0.140000",
+        "asset_type": "EQUITY",
+        "sector": "Technology",
+        "country": "US"
+      },
+      {
+        "constituent_isin": "ZZEQ01050014",
+        "name": "Epsilon Software AG",
+        "weight": "0.110000",
+        "asset_type": "EQUITY",
+        "sector": "Technology",
+        "country": "DE"
+      },
+      {
+        "constituent_isin": "ZZEQ01060013",
+        "name": "Fuji Robotics KK",
+        "weight": "0.100000",
+        "asset_type": "EQUITY",
+        "sector": "Technology",
+        "country": "JP"
+      },
+      {
+        "constituent_isin": "ZZEQ01070012",
+        "name": "Galileo AI Labs",
+        "weight": "0.080000",
+        "asset_type": "EQUITY",
+        "sector": "Technology",
+        "country": "UK"
+      },
+      {
+        "constituent_isin": "ZZEQ01080011",
+        "name": "Helios Microdevices",
+        "weight": "0.080000",
+        "asset_type": "EQUITY",
+        "sector": "Technology",
+        "country": "US"
+      }
+    ]
+  },
+  {
+    "isin": "ZZET00000058",
+    "name": "Plumbline Europe Stoxx Select UCITS ETF (Dist)",
+    "category": "European Equity",
+    "domicile": "IE",
+    "base_currency": "EUR",
+    "distribution_policy": "DISTRIBUTING",
+    "is_currency_hedged": false,
+    "hedge_currency": null,
+    "ter_bps": 18,
+    "listings": [
+      {
+        "isin": "ZZET00000058",
+        "mic": "XETR",
+        "ticker": "PEUR",
+        "currency": "EUR"
+      },
+      {
+        "isin": "ZZET00000058",
+        "mic": "XAMS",
+        "ticker": "PEUR",
+        "currency": "EUR"
+      }
+    ],
+    "constituents": [
+      {
+        "constituent_isin": "ZZEQ01050014",
+        "name": "Epsilon Software AG",
+        "weight": "0.160000",
+        "asset_type": "EQUITY",
+        "sector": "Technology",
+        "country": "DE"
+      },
+      {
+        "constituent_isin": "ZZEQ01100017",
+        "name": "Nordic Rhine Capital",
+        "weight": "0.150000",
+        "asset_type": "EQUITY",
+        "sector": "Financials",
+        "country": "DE"
+      },
+      {
+        "constituent_isin": "ZZEQ01130014",
+        "name": "Atlantic Trust Ireland",
+        "weight": "0.140000",
+        "asset_type": "EQUITY",
+        "sector": "Financials",
+        "country": "IE"
+      },
+      {
+        "constituent_isin": "ZZEQ01170010",
+        "name": "Rhone Pasteur Laboratories",
+        "weight": "0.130000",
+        "asset_type": "EQUITY",
+        "sector": "Healthcare",
+        "country": "FR"
+      },
+      {
+        "constituent_isin": "ZZEQ01190018",
+        "name": "Eire Genomics",
+        "weight": "0.120000",
+        "asset_type": "EQUITY",
+        "sector": "Healthcare",
+        "country": "IE"
+      },
+      {
+        "constituent_isin": "ZZEQ01210014",
+        "name": "Krona Motors Europa",
+        "weight": "0.110000",
+        "asset_type": "EQUITY",
+        "sector": "Consumer Discretionary",
+        "country": "DE"
+      },
+      {
+        "constituent_isin": "ZZEQ01220013",
+        "name": "Lumiere Fashion Brands",
+        "weight": "0.100000",
+        "asset_type": "EQUITY",
+        "sector": "Consumer Discretionary",
+        "country": "FR"
+      },
+      {
+        "constituent_isin": "ZZEQ01250010",
+        "name": "Atlas Heavy Logistics",
+        "weight": "0.090000",
+        "asset_type": "EQUITY",
+        "sector": "Industrials",
+        "country": "DE"
+      }
+    ]
+  },
+  {
+    "isin": "ZZET00000066",
+    "name": "Plumbline UK Core Equity UCITS ETF (Dist)",
+    "category": "UK Equity",
+    "domicile": "IE",
+    "base_currency": "GBP",
+    "distribution_policy": "DISTRIBUTING",
+    "is_currency_hedged": false,
+    "hedge_currency": null,
+    "ter_bps": 14,
+    "listings": [
+      {
+        "isin": "ZZET00000066",
+        "mic": "XLON",
+        "ticker": "PUKC",
+        "currency": "GBP"
+      }
+    ],
+    "constituents": [
+      {
+        "constituent_isin": "ZZEQ01070012",
+        "name": "Galileo AI Labs",
+        "weight": "0.240000",
+        "asset_type": "EQUITY",
+        "sector": "Technology",
+        "country": "UK"
+      },
+      {
+        "constituent_isin": "ZZEQ01090010",
+        "name": "Imperial Midland Bank",
+        "weight": "0.200000",
+        "asset_type": "EQUITY",
+        "sector": "Financials",
+        "country": "UK"
+      },
+      {
+        "constituent_isin": "ZZEQ01120015",
+        "name": "Caledonia Mutual Corp",
+        "weight": "0.180000",
+        "asset_type": "EQUITY",
+        "sector": "Financials",
+        "country": "UK"
+      },
+      {
+        "constituent_isin": "ZZEQ01160011",
+        "name": "Zenith Pharmaceuticals",
+        "weight": "0.150000",
+        "asset_type": "EQUITY",
+        "sector": "Healthcare",
+        "country": "UK"
+      },
+      {
+        "constituent_isin": "ZZEQ01270018",
+        "name": "Meridian Freight Marine",
+        "weight": "0.120000",
+        "asset_type": "EQUITY",
+        "sector": "Industrials",
+        "country": "UK"
+      },
+      {
+        "constituent_isin": "ZZEQ01300013",
+        "name": "North Sea Wind & Energy",
+        "weight": "0.110000",
+        "asset_type": "EQUITY",
+        "sector": "Energy",
+        "country": "UK"
+      }
+    ]
+  },
+  {
+    "isin": "ZZET00000074",
+    "name": "Plumbline Emerging Market Stars UCITS ETF (Acc)",
+    "category": "Emerging Markets",
+    "domicile": "IE",
+    "base_currency": "USD",
+    "distribution_policy": "ACCUMULATING",
+    "is_currency_hedged": false,
+    "hedge_currency": null,
+    "ter_bps": 28,
+    "listings": [
+      {
+        "isin": "ZZET00000074",
+        "mic": "XETR",
+        "ticker": "PEMG",
+        "currency": "EUR"
+      },
+      {
+        "isin": "ZZET00000074",
+        "mic": "XLON",
+        "ticker": "PEMG",
+        "currency": "GBP"
+      }
+    ],
+    "constituents": [
+      {
+        "constituent_isin": "ZZEQ01060013",
+        "name": "Fuji Robotics KK",
+        "weight": "0.220000",
+        "asset_type": "EQUITY",
+        "sector": "Technology",
+        "country": "JP"
+      },
+      {
+        "constituent_isin": "ZZEQ01110016",
+        "name": "Pacific Sovereign Assurance",
+        "weight": "0.200000",
+        "asset_type": "EQUITY",
+        "sector": "Financials",
+        "country": "JP"
+      },
+      {
+        "constituent_isin": "ZZEQ01180019",
+        "name": "Nippon Care Diagnostics",
+        "weight": "0.180000",
+        "asset_type": "EQUITY",
+        "sector": "Healthcare",
+        "country": "JP"
+      },
+      {
+        "constituent_isin": "ZZEQ01230012",
+        "name": "Sakura Leisure Holdings",
+        "weight": "0.160000",
+        "asset_type": "EQUITY",
+        "sector": "Consumer Discretionary",
+        "country": "JP"
+      },
+      {
+        "constituent_isin": "ZZEQ01290016",
+        "name": "Shinkansen Heavy Tech",
+        "weight": "0.140000",
+        "asset_type": "EQUITY",
+        "sector": "Industrials",
+        "country": "JP"
+      },
+      {
+        "constituent_isin": "ZZEQ01330010",
+        "name": "Kyoto Green Generation",
+        "weight": "0.100000",
+        "asset_type": "EQUITY",
+        "sector": "Energy",
+        "country": "JP"
+      }
+    ]
+  },
+  {
+    "isin": "ZZET00000082",
+    "name": "Plumbline Global Aggregate Bond EUR-Hedged UCITS ETF (Dist)",
+    "category": "Fixed Income",
+    "domicile": "IE",
+    "base_currency": "EUR",
+    "distribution_policy": "DISTRIBUTING",
+    "is_currency_hedged": true,
+    "hedge_currency": "EUR",
+    "ter_bps": 16,
+    "listings": [
+      {
+        "isin": "ZZET00000082",
+        "mic": "XETR",
+        "ticker": "PBND",
+        "currency": "EUR"
+      },
+      {
+        "isin": "ZZET00000082",
+        "mic": "XLON",
+        "ticker": "PBND",
+        "currency": "GBP"
+      }
+    ],
+    "constituents": [
+      {
+        "constituent_isin": "ZZBD00000018",
+        "name": "Govt Bond 1-3Y",
+        "weight": "0.350000",
+        "asset_type": "BOND",
+        "sector": "Government",
+        "country": "DE"
+      },
+      {
+        "constituent_isin": "ZZBD00000026",
+        "name": "Govt Bond 5-10Y",
+        "weight": "0.400000",
+        "asset_type": "BOND",
+        "sector": "Government",
+        "country": "FR"
+      },
+      {
+        "constituent_isin": "ZZBD00000034",
+        "name": "Corporate Bond A-AAA",
+        "weight": "0.250000",
+        "asset_type": "BOND",
+        "sector": "Corporate",
+        "country": "US"
+      }
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "seed": 42,
+  "companies_count": 40,
+  "funds_count": 8,
+  "portfolios_count": 3,
+  "files": {
+    "companies.json": "dad9f21be1c1b01af674fd5f00bc757317a0c6e23693b34ff4de552d473266a9",
+    "funds.json": "7602793bdbb24ee288b85ddbd68f7d2d0f6553ff2d6e4c83b03c6cd58894927d",
+    "corporate_actions.json": "6143fa6b657392b10a498e60f30c3676893253dd412978aa3e8721629312876b",
+    "portfolios.json": "696d4be2e297f7294e519c0e96d3ca03d0c24d802f99965448ddb827ca9d4f42",
+    "trading212_overlapping.csv": "9c5bb764c48839af0ddbfb96b2bc7613b05e52a97ec8dbc08adc7e5cc68ed548",
+    "degiro_student_transactions.csv": "621bf889a05ec9f39d05543661acaf8643d5bd97a9743bca5286b134f4642a52"
+  }
+}
