@@ -1,7 +1,7 @@
 """Portfolio CRUD and look-through X-Ray endpoints."""
 
 from decimal import Decimal, ROUND_HALF_UP
-from fastapi import APIRouter
+from fastapi import APIRouter, Depends
 
 from app.contracts import (
     PortfolioDetail,
@@ -18,6 +18,11 @@ from app.portfolio_data import (
     list_portfolio_keys,
     resolve_portfolio_key,
 )
+from app.security import (
+    get_portfolio_owner,
+    get_tenant_id,
+    verify_portfolio_tenant_access,
+)
 from lookthrough.expansion import expand_portfolio
 from lookthrough.models import PortfolioHolding
 
@@ -25,10 +30,12 @@ router = APIRouter(prefix="/v1/portfolios", tags=["Portfolios"])
 
 
 @router.get("", response_model=list[PortfolioSummary])
-def list_portfolios() -> list[PortfolioSummary]:
-    """List available demo portfolios with summary valuation metrics."""
+def list_portfolios(tenant_id: str = Depends(get_tenant_id)) -> list[PortfolioSummary]:
+    """List available portfolios owned by the requesting tenant with summary valuation metrics."""
     summaries: list[PortfolioSummary] = []
     for key in list_portfolio_keys():
+        if get_portfolio_owner(key) != tenant_id:
+            continue
         snapshot, _ = build_portfolio_snapshot(key)
         total_val = holdings_market_value(snapshot)
         summaries.append(
@@ -44,9 +51,10 @@ def list_portfolios() -> list[PortfolioSummary]:
 
 
 @router.get("/{portfolio_id}", response_model=PortfolioDetail)
-def get_portfolio(portfolio_id: str) -> PortfolioDetail:
+def get_portfolio(portfolio_id: str, tenant_id: str = Depends(get_tenant_id)) -> PortfolioDetail:
     """Retrieve a single portfolio with its valued positions."""
     key = resolve_portfolio_key(portfolio_id)
+    verify_portfolio_tenant_access(key, tenant_id)
     snapshot, tickers = build_portfolio_snapshot(key)
     total_val = holdings_market_value(snapshot)
 
@@ -82,9 +90,10 @@ def get_portfolio(portfolio_id: str) -> PortfolioDetail:
 
 
 @router.get("/{portfolio_id}/xray", response_model=XRayResponse)
-def get_portfolio_xray(portfolio_id: str) -> XRayResponse:
+def get_portfolio_xray(portfolio_id: str, tenant_id: str = Depends(get_tenant_id)) -> XRayResponse:
     """Run look-through expansion on a portfolio and return flat leaf positions with weights."""
     key = resolve_portfolio_key(portfolio_id)
+    verify_portfolio_tenant_access(key, tenant_id)
     snapshot, tickers = build_portfolio_snapshot(key)
     total_val = holdings_market_value(snapshot)
     catalog = get_funds_catalog()
