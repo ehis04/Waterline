@@ -36,6 +36,15 @@ from risk_core.risk_diff import (
     calculate_risk_diff,
 )
 
+from risk_core.scenarios import (
+    StressResult,
+    apply_hypothetical_shocks,
+)
+from risk_core.breaking_point import (
+    BreakingPointSolution,
+    solve_breaking_point,
+)
+
 __version__ = "0.1.0"
 
 __all__ = [
@@ -62,4 +71,8 @@ __all__ = [
     "calculate_euler_contributions",
     "RiskDiffResult",
     "calculate_risk_diff",
+    "StressResult",
+    "apply_hypothetical_shocks",
+    "BreakingPointSolution",
+    "solve_breaking_point",
 ]
