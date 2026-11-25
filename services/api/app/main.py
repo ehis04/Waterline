@@ -6,7 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
 from app.contracts import ErrorResponse
-from app.routes import demo, health, public_overlap, receipts
+from app.routes import analytics, demo, health, portfolio, public_overlap, receipts
 
 app = FastAPI(
     title="Waterline Financial Risk API",
@@ -68,3 +68,5 @@ app.include_router(health.router)
 app.include_router(demo.router)
 app.include_router(public_overlap.router)
 app.include_router(receipts.router)
+app.include_router(portfolio.router)
+app.include_router(analytics.router)
