@@ -1,0 +1,6 @@
+Action,Time,ISIN,Ticker,Name,No. of shares,Price / share (EUR),Currency (Price / share),Exchange rate,Result (EUR),Total (EUR),Withholding tax (EUR),Currency conversion fee (EUR),Notes
+Market buy,2023-01-10T09:30:00Z,ZZET00000017,PDEV,Fictional Security PDEV,150,78.50,EUR,1.00,0.00,11775.00,0.00,0.00,Ref tx_101
+Market buy,2023-01-10T09:35:00Z,ZZET00000033,PUS5,Fictional Security PUS5,100,82.10,EUR,1.00,0.00,8210.00,0.00,0.00,Ref tx_102
+Market buy,2023-01-10T09:40:00Z,ZZET00000041,PTCH,Fictional Security PTCH,80,112.40,EUR,1.00,0.00,8992.00,0.00,0.00,Ref tx_103
+Market buy,2023-03-15T11:00:00Z,ZZEQ01010018,AETH,Fictional Security AETH,50,95.00,EUR,1.00,0.00,4750.00,0.00,0.00,Ref tx_104
+Market buy,2023-11-20T14:15:00Z,ZZET00000017,PDEV,Fictional Security PDEV,40,84.20,EUR,1.00,0.00,3368.00,0.00,0.00,Ref tx_105

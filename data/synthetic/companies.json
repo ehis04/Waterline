@@ -1,0 +1,402 @@
+[
+  {
+    "isin": "ZZEQ01010018",
+    "name": "Aether Technologies",
+    "ticker": "AETH",
+    "sector": "Technology",
+    "country": "US",
+    "currency": "USD",
+    "base_market_cap": "180.00",
+    "base_volatility": "0.2800"
+  },
+  {
+    "isin": "ZZEQ01020017",
+    "name": "Boreas Systems",
+    "ticker": "BORS",
+    "sector": "Technology",
+    "country": "US",
+    "currency": "USD",
+    "base_market_cap": "210.00",
+    "base_volatility": "0.2600"
+  },
+  {
+    "isin": "ZZEQ01030016",
+    "name": "Cipher Cloud Dynamics",
+    "ticker": "CCLD",
+    "sector": "Technology",
+    "country": "US",
+    "currency": "USD",
+    "base_market_cap": "95.00",
+    "base_volatility": "0.3200"
+  },
+  {
+    "isin": "ZZEQ01040015",
+    "name": "Delta Semiconductor",
+    "ticker": "DSMC",
+    "sector": "Technology",
+    "country": "US",
+    "currency": "USD",
+    "base_market_cap": "140.00",
+    "base_volatility": "0.3000"
+  },
+  {
+    "isin": "ZZEQ01050014",
+    "name": "Epsilon Software AG",
+    "ticker": "EPSG",
+    "sector": "Technology",
+    "country": "DE",
+    "currency": "EUR",
+    "base_market_cap": "68.00",
+    "base_volatility": "0.2200"
+  },
+  {
+    "isin": "ZZEQ01060013",
+    "name": "Fuji Robotics KK",
+    "ticker": "FROB",
+    "sector": "Technology",
+    "country": "JP",
+    "currency": "JPY",
+    "base_market_cap": "45.00",
+    "base_volatility": "0.2500"
+  },
+  {
+    "isin": "ZZEQ01070012",
+    "name": "Galileo AI Labs",
+    "ticker": "GAIL",
+    "sector": "Technology",
+    "country": "UK",
+    "currency": "GBP",
+    "base_market_cap": "55.00",
+    "base_volatility": "0.3500"
+  },
+  {
+    "isin": "ZZEQ01080011",
+    "name": "Helios Microdevices",
+    "ticker": "HMIC",
+    "sector": "Technology",
+    "country": "US",
+    "currency": "USD",
+    "base_market_cap": "120.00",
+    "base_volatility": "0.2900"
+  },
+  {
+    "isin": "ZZEQ01090010",
+    "name": "Imperial Midland Bank",
+    "ticker": "IMBK",
+    "sector": "Financials",
+    "country": "UK",
+    "currency": "GBP",
+    "base_market_cap": "85.00",
+    "base_volatility": "0.2000"
+  },
+  {
+    "isin": "ZZEQ01100017",
+    "name": "Nordic Rhine Capital",
+    "ticker": "NRHC",
+    "sector": "Financials",
+    "country": "DE",
+    "currency": "EUR",
+    "base_market_cap": "110.00",
+    "base_volatility": "0.1800"
+  },
+  {
+    "isin": "ZZEQ01110016",
+    "name": "Pacific Sovereign Assurance",
+    "ticker": "PSOV",
+    "sector": "Financials",
+    "country": "JP",
+    "currency": "JPY",
+    "base_market_cap": "60.00",
+    "base_volatility": "0.1700"
+  },
+  {
+    "isin": "ZZEQ01120015",
+    "name": "Caledonia Mutual Corp",
+    "ticker": "CMUT",
+    "sector": "Financials",
+    "country": "UK",
+    "currency": "GBP",
+    "base_market_cap": "40.00",
+    "base_volatility": "0.1900"
+  },
+  {
+    "isin": "ZZEQ01130014",
+    "name": "Atlantic Trust Ireland",
+    "ticker": "ATIR",
+    "sector": "Financials",
+    "country": "IE",
+    "currency": "EUR",
+    "base_market_cap": "32.00",
+    "base_volatility": "0.2100"
+  },
+  {
+    "isin": "ZZEQ01140013",
+    "name": "Apex Global Bancorp",
+    "ticker": "APEX",
+    "sector": "Financials",
+    "country": "US",
+    "currency": "USD",
+    "base_market_cap": "130.00",
+    "base_volatility": "0.2200"
+  },
+  {
+    "isin": "ZZEQ01150012",
+    "name": "Vanguard BioTherapeutics",
+    "ticker": "VBIO",
+    "sector": "Healthcare",
+    "country": "US",
+    "currency": "USD",
+    "base_market_cap": "160.00",
+    "base_volatility": "0.2400"
+  },
+  {
+    "isin": "ZZEQ01160011",
+    "name": "Zenith Pharmaceuticals",
+    "ticker": "ZPHM",
+    "sector": "Healthcare",
+    "country": "UK",
+    "currency": "GBP",
+    "base_market_cap": "90.00",
+    "base_volatility": "0.1900"
+  },
+  {
+    "isin": "ZZEQ01170010",
+    "name": "Rhone Pasteur Laboratories",
+    "ticker": "RPLB",
+    "sector": "Healthcare",
+    "country": "FR",
+    "currency": "EUR",
+    "base_market_cap": "78.00",
+    "base_volatility": "0.2000"
+  },
+  {
+    "isin": "ZZEQ01180019",
+    "name": "Nippon Care Diagnostics",
+    "ticker": "NCDG",
+    "sector": "Healthcare",
+    "country": "JP",
+    "currency": "JPY",
+    "base_market_cap": "50.00",
+    "base_volatility": "0.1800"
+  },
+  {
+    "isin": "ZZEQ01190018",
+    "name": "Eire Genomics",
+    "ticker": "EGEN",
+    "sector": "Healthcare",
+    "country": "IE",
+    "currency": "EUR",
+    "base_market_cap": "28.00",
+    "base_volatility": "0.2700"
+  },
+  {
+    "isin": "ZZEQ01200015",
+    "name": "Orion Global Retail",
+    "ticker": "ORGL",
+    "sector": "Consumer Discretionary",
+    "country": "US",
+    "currency": "USD",
+    "base_market_cap": "175.00",
+    "base_volatility": "0.2500"
+  },
+  {
+    "isin": "ZZEQ01210014",
+    "name": "Krona Motors Europa",
+    "ticker": "KMTR",
+    "sector": "Consumer Discretionary",
+    "country": "DE",
+    "currency": "EUR",
+    "base_market_cap": "65.00",
+    "base_volatility": "0.2600"
+  },
+  {
+    "isin": "ZZEQ01220013",
+    "name": "Lumiere Fashion Brands",
+    "ticker": "LUMI",
+    "sector": "Consumer Discretionary",
+    "country": "FR",
+    "currency": "EUR",
+    "base_market_cap": "140.00",
+    "base_volatility": "0.2100"
+  },
+  {
+    "isin": "ZZEQ01230012",
+    "name": "Sakura Leisure Holdings",
+    "ticker": "SLSR",
+    "sector": "Consumer Discretionary",
+    "country": "JP",
+    "currency": "JPY",
+    "base_market_cap": "38.00",
+    "base_volatility": "0.2300"
+  },
+  {
+    "isin": "ZZEQ01240011",
+    "name": "Veritas Entertainment",
+    "ticker": "VERT",
+    "sector": "Consumer Discretionary",
+    "country": "US",
+    "currency": "USD",
+    "base_market_cap": "88.00",
+    "base_volatility": "0.2800"
+  },
+  {
+    "isin": "ZZEQ01250010",
+    "name": "Atlas Heavy Logistics",
+    "ticker": "AHLG",
+    "sector": "Industrials",
+    "country": "DE",
+    "currency": "EUR",
+    "base_market_cap": "92.00",
+    "base_volatility": "0.2100"
+  },
+  {
+    "isin": "ZZEQ01260019",
+    "name": "Concorde Aerospace Systems",
+    "ticker": "CASC",
+    "sector": "Industrials",
+    "country": "FR",
+    "currency": "EUR",
+    "base_market_cap": "105.00",
+    "base_volatility": "0.2300"
+  },
+  {
+    "isin": "ZZEQ01270018",
+    "name": "Meridian Freight Marine",
+    "ticker": "MFRT",
+    "sector": "Industrials",
+    "country": "UK",
+    "currency": "GBP",
+    "base_market_cap": "48.00",
+    "base_volatility": "0.2400"
+  },
+  {
+    "isin": "ZZEQ01280017",
+    "name": "Keystone Infrastructure",
+    "ticker": "KYST",
+    "sector": "Industrials",
+    "country": "US",
+    "currency": "USD",
+    "base_market_cap": "82.00",
+    "base_volatility": "0.2000"
+  },
+  {
+    "isin": "ZZEQ01290016",
+    "name": "Shinkansen Heavy Tech",
+    "ticker": "SHNK",
+    "sector": "Industrials",
+    "country": "JP",
+    "currency": "JPY",
+    "base_market_cap": "72.00",
+    "base_volatility": "0.1900"
+  },
+  {
+    "isin": "ZZEQ01300013",
+    "name": "North Sea Wind & Energy",
+    "ticker": "NSWE",
+    "sector": "Energy",
+    "country": "UK",
+    "currency": "GBP",
+    "base_market_cap": "64.00",
+    "base_volatility": "0.2700"
+  },
+  {
+    "isin": "ZZEQ01310012",
+    "name": "Equator Hydrocarbons",
+    "ticker": "EQHC",
+    "sector": "Energy",
+    "country": "US",
+    "currency": "USD",
+    "base_market_cap": "115.00",
+    "base_volatility": "0.2900"
+  },
+  {
+    "isin": "ZZEQ01320011",
+    "name": "Alps Clean Power",
+    "ticker": "ALPW",
+    "sector": "Energy",
+    "country": "DE",
+    "currency": "EUR",
+    "base_market_cap": "52.00",
+    "base_volatility": "0.2400"
+  },
+  {
+    "isin": "ZZEQ01330010",
+    "name": "Kyoto Green Generation",
+    "ticker": "KYGR",
+    "sector": "Energy",
+    "country": "JP",
+    "currency": "JPY",
+    "base_market_cap": "44.00",
+    "base_volatility": "0.2200"
+  },
+  {
+    "isin": "ZZEQ01340019",
+    "name": "Bavaria Specialty Chemicals",
+    "ticker": "BSCH",
+    "sector": "Materials",
+    "country": "DE",
+    "currency": "EUR",
+    "base_market_cap": "75.00",
+    "base_volatility": "0.2300"
+  },
+  {
+    "isin": "ZZEQ01350018",
+    "name": "Saxon Lithium Mining",
+    "ticker": "SLMN",
+    "sector": "Materials",
+    "country": "UK",
+    "currency": "GBP",
+    "base_market_cap": "36.00",
+    "base_volatility": "0.3400"
+  },
+  {
+    "isin": "ZZEQ01360017",
+    "name": "Gallia Sustainable Paper",
+    "ticker": "GSPP",
+    "sector": "Materials",
+    "country": "FR",
+    "currency": "EUR",
+    "base_market_cap": "30.00",
+    "base_volatility": "0.2100"
+  },
+  {
+    "isin": "ZZEQ01370016",
+    "name": "Pacific Polymetals",
+    "ticker": "PPLY",
+    "sector": "Materials",
+    "country": "JP",
+    "currency": "JPY",
+    "base_market_cap": "58.00",
+    "base_volatility": "0.2600"
+  },
+  {
+    "isin": "ZZEQ01380015",
+    "name": "Celtic Water & Grid",
+    "ticker": "CWGD",
+    "sector": "Utilities",
+    "country": "IE",
+    "currency": "EUR",
+    "base_market_cap": "25.00",
+    "base_volatility": "0.1500"
+  },
+  {
+    "isin": "ZZEQ01390014",
+    "name": "Thames Valley Power",
+    "ticker": "TVPW",
+    "sector": "Utilities",
+    "country": "UK",
+    "currency": "GBP",
+    "base_market_cap": "42.00",
+    "base_volatility": "0.1400"
+  },
+  {
+    "isin": "ZZEQ01400011",
+    "name": "Rheinland Netz AG",
+    "ticker": "RNAG",
+    "sector": "Utilities",
+    "country": "DE",
+    "currency": "EUR",
+    "base_market_cap": "54.00",
+    "base_volatility": "0.1600"
+  }
+]
