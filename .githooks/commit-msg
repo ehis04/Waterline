@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+# Enforces commit format and blocks AI/agent attribution.
+# Enable once per clone:  git config core.hooksPath .githooks
+set -euo pipefail
+
+msg_file="$1"
+# Ignore comment lines git adds to the editor template.
+msg="$(grep -v '^#' "$msg_file")"
+subject="$(printf '%s\n' "$msg" | head -n 1)"
+
+# Allow git's own merge/revert subjects.
+if printf '%s' "$subject" | grep -Eq '^(Merge|Revert) '; then exit 0; fi
+
+pattern='^(feat|fix|chore|refactor|test|docs|perf|build|ci|style|revert)(\([a-z0-9._-]+\))?!?: [a-z0-9].*[^.]$'
+if ! printf '%s' "$subject" | grep -Eq "$pattern"; then
+  echo "commit-msg: subject must look like 'feat: implemented overlap matrix'" >&2
+  echo "  types: feat fix chore refactor test docs perf build ci style revert" >&2
+  echo "  lowercase start, no trailing full stop" >&2
+  exit 1
+fi
+
+if [ "${#subject}" -gt 72 ]; then
+  echo "commit-msg: subject is ${#subject} characters (max 72)" >&2
+  exit 1
+fi
+
+banned='co-authored-by:|generated (with|by) (claude|chatgpt|copilot|cursor|ai|an ai)|claude-session:|noreply@anthropic\.com|written by (claude|chatgpt|copilot|cursor|ai|an ai)|🤖'
+if printf '%s' "$msg" | grep -Eiq "$banned"; then
+  echo "commit-msg: AI/agent attribution is not allowed in commit messages (see AGENTS.md §1)" >&2
+  exit 1
+fi

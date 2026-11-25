@@ -1,0 +1,11 @@
+[project]
+name = "portfolio-risk-data-adapters"
+version = "0.1.0"
+description = "Market data and reference data provider adapters"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

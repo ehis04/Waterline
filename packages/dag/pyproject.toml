@@ -1,0 +1,11 @@
+[project]
+name = "portfolio-risk-dag"
+version = "0.1.0"
+description = "Deterministic computation DAG and calculation receipt builder"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

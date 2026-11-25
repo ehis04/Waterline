@@ -1,0 +1,7 @@
+{
+  "name": "waterline",
+  "private": true,
+  "scripts": {
+    "test": "pnpm --filter ./apps/* test"
+  }
+}

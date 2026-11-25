@@ -1,0 +1,11 @@
+[project]
+name = "waterline-worker"
+version = "0.1.0"
+description = "Background task worker for analytical jobs"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

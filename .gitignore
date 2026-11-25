@@ -1,0 +1,39 @@
+# Uploaded specification documents and kit
+Financial_Risk_Intelligence_Master_Specification*.md
+agent-kit/
+*:Zone.Identifier
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+
+# Node & Next.js
+node_modules/
+.pnpm-store/
+.next/
+out/
+.turbo/
+
+# Environment & Secrets
+.env
+.env.*
+!.env.example
+*.pem
+id_rsa
+id_rsa*
+id_ed25519
+id_ed25519*
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

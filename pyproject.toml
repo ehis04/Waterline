@@ -1,0 +1,38 @@
+[project]
+name = "waterline-workspace"
+version = "0.1.0"
+description = "Waterline: open-core portfolio risk workbench for ETF investors"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[tool.uv.workspace]
+members = [
+    "packages/risk_core",
+    "packages/dag",
+    "packages/lookthrough",
+    "packages/data_adapters",
+    "services/api",
+    "services/worker",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["packages", "services", "tests"]
+python_files = ["test_*.py"]
+pythonpath = [
+    "packages/risk_core/src",
+    "packages/dag/src",
+    "packages/lookthrough/src",
+    "packages/data_adapters/src",
+    "services/api",
+    "services/worker",
+]
+addopts = "-q"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "B", "UP"]
+ignore = ["E501"]

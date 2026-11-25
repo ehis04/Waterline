@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# Blocks AI/agent attribution in staged code and docs, and obvious secrets files.
+# Enable once per clone:  git config core.hooksPath .githooks
+set -euo pipefail
+
+# Added lines only, excluding this hooks folder and AGENTS.md (which describe the rule).
+added="$(git diff --cached -U0 --no-color -- . ':(exclude).githooks' ':(exclude)AGENTS.md' \
+  | grep -E '^\+[^+]' || true)"
+
+banned='co-authored-by:|generated (with|by) (claude|chatgpt|copilot|cursor|ai|an ai)|written by (claude|chatgpt|copilot|cursor|ai|an ai)|claude-session:|noreply@anthropic\.com|🤖'
+if printf '%s' "$added" | grep -Eiq "$banned"; then
+  echo "pre-commit: AI/agent attribution found in staged changes (see AGENTS.md §1):" >&2
+  printf '%s\n' "$added" | grep -Ein "$banned" | head -n 5 >&2
+  exit 1
+fi
+
+secrets="$(git diff --cached --name-only --diff-filter=ACMR \
+  | grep -Ev '(^|/)\.env\.example$' \
+  | grep -E '(^|/)\.env($|\.)|\.pem$|(^|/)id_(rsa|ed25519)(\.|$)' || true)"
+if [ -n "$secrets" ]; then
+  echo "pre-commit: refusing to commit secrets-like files:" >&2
+  printf '  %s\n' $secrets >&2
+  exit 1
+fi
